@@ -1,0 +1,203 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Josefin Sans", sans-serif;
+    }
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        max-height: 800px;
+        position: relative;
+    }
+    
+    .contenuImg {
+        max-width: 1440px;
+        background-image: url('images/bg-desktop-light.jpg');
+        padding: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    
+    .contenuE {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -30px;
+    }
+    
+    span {
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 14px;
+        margin-right: 10px;
+    }
+    
+    .conteneur {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+    
+    .containI {
+        width: 480px;
+        height: 30px;
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        background-color: white;
+        padding: 25px;
+        border-radius: 4px;
+        margin: auto;
+    }
+    
+    input {
+        outline: none;
+        border: none;
+    }
+    
+    #contain2 {
+        height: 340px;
+        background-color: hsl(0, 0%, 98%);
+        z-index: 1;
+    }
+    
+    .moi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        background-color: white;
+        border-radius: 4px;
+        margin: auto;
+        width: 480px;
+        border-radius: 4px;
+        margin-top: -70px;
+        padding-bottom: 17px;
+    }
+    
+    .btn {
+        padding: 15px;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        border: none;
+    }
+    
+    ul {
+        padding: 20px;
+    }
+    
+    li {
+        list-style: none;
+        padding: 10px;
+    }
+    /* .grandDiv {
+        display: flex;
+        justify-content: flex-start;
+    }*/
+    
+    .elt {
+        width: 450px;
+        padding: 12px;
+        margin: 4px;
+    }
+    
+    label {
+        clear: left;
+        padding-left: 12px;
+        padding-bottom: 88px;
+    }
+    
+    .radio {
+        padding-left: 12x;
+        padding: 7px;
+    }
+    
+    .elt::after {
+        content: "";
+        display: block;
+        width: 475px;
+        height: 1px;
+        background-color: gainsboro;
+        margin-bottom: 7px;
+    }
+    /*label {
+        padding: 0 0 0 2rem;
+        position: relative;
+    }
+    
+    input[type=radio] {
+        position: absolute;
+        opacity: 0;
+    }
+    
+    input[type=radio]+label::before,
+    input[type=radio]+label::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+    }
+    
+    input[type=radio]+label::before {
+        left: 0.5rem;
+        top: 0.2rem;
+        display: inline-block;
+        width: 0.8rem;
+        height: 0.8rem;
+        border: 0.05rem solid;
+        background: white;
+    }
+    
+    input[type=radio]:checked+label::after {
+        left: 0.7rem;
+        top: 0.4rem;
+        border: 0.25rem solid black;
+    }*/
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .centrer ul {
+        display: flex;
+        font-size: 12px;
+        flex-direction: row;
+    }
+    
+    .centrer ul li {
+        cursor: pointer;
+    }
+    
+    .bouton {
+        border-style: none;
+        margin-right: 50px;
+    }
+    
+    .delete {
+        margin-left: 420px;
+        border: none;
+    }
+    
+    .underline {
+        text-decoration: line-through;
+    }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <div class='container' x-data='{
+        datas:[],
+        text:"", } '>
+        <div class="contenuImg">
+            <div class="contenuE">
+                <div><span>TODO</span></div>
+                <div><img src="images/icon-moon.svg" alt=""></div>
+            </div>
+
+            <div class='conteneur'>
+                <div class="containI">
+                    <form action="">
+                        <button class='btn' type="submit" x-on:click='if (text.trim()!="") {
+                            datas.push({
+                                text,
+                                completed:false
+                            })
+
+                            
+                        }'></button>
+                        <input type="text" placeholder="Create a new todo.." x-model='text'>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div id="contain2">
+            <div class="moi">
+                <div class="eltt" data-filter="all">
+                    <ul>
+                        <template x-for="(todo,item) in datas" :key="item">
+                          
+                            <div class="elt">
+                             <input type="radio" class="radio"  name="" id=""  x-on:click='todo.completed = ! todo.completed;console.log(todo.completed); let value =document.querySelectorAll("label");
+                             
+                                 
+                              for(let i=0;i<value.length;i++){
+                                  value[i].classList.add("underline");
+          
+                              }
+            
+                              '><label for="" x-text="todo.text"></label>
+                             <button  class="delete"  x-on:click="datas=datas.filter((todo,element) => element !== item)">X</button>
+                            
+                           </div>
+                          
+                           
+                        </template>
+
+                    </ul>
+
+                </div>
+                <div class="centrer">
+                    <ul>
+                        <li x-on:click='
+
+                        let value= document.getElementByClassName("eltt").dataset.filter;
+                        if (value="all"){
+                            document.getElementByClassName("eltt").show(2000);
+
+                        }
+                        '>ALL</li>
+                        <li>ACTIVE</li>
+                        <li>COMPLETED</li>
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#">Hanane MOUFTAOU</a>.
+    </div>
+</body>
+
+</html>
+
+</html>
